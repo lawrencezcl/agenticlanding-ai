@@ -1,9 +1,20 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/navigation'
 import { ArrowRight, Rocket } from 'lucide-react'
 
 export function CTASection() {
+  const router = useRouter()
+
+  const handleStartTrial = () => {
+    router.push('/auth/signin')
+  }
+
+  const handleScheduleDemo = () => {
+    // For now, navigate to signin - can add demo scheduling later
+    router.push('/auth/signin')
+  }
   return (
     <section className="py-20 bg-gradient-to-r from-brand-main to-brand-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,11 +49,17 @@ export function CTASection() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <button className="bg-white text-brand-main hover:bg-gray-100 transition-colors duration-200 font-bold py-4 px-8 rounded-lg text-lg flex items-center">
+            <button
+              onClick={handleStartTrial}
+              className="bg-white text-brand-main hover:bg-gray-100 transition-colors duration-200 font-bold py-4 px-8 rounded-lg text-lg flex items-center hover:scale-105 transition-transform"
+            >
               Start Free Trial
               <ArrowRight className="ml-2 w-5 h-5" />
             </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-brand-main transition-all duration-200 font-bold py-4 px-8 rounded-lg text-lg">
+            <button
+              onClick={handleScheduleDemo}
+              className="border-2 border-white text-white hover:bg-white hover:text-brand-main transition-all duration-200 font-bold py-4 px-8 rounded-lg text-lg hover:scale-105 transition-transform"
+            >
               Schedule Demo
             </button>
           </motion.div>

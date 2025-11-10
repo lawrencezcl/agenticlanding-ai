@@ -2,10 +2,21 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/navigation'
 import { ArrowRight, Sparkles, Zap, Shield } from 'lucide-react'
 
 export function HeroSection() {
   const [email, setEmail] = useState('')
+  const router = useRouter()
+
+  const handleGetStarted = () => {
+    router.push('/auth/signin')
+  }
+
+  const handleWatchDemo = () => {
+    // For now, navigate to signin as well - can add demo page later
+    router.push('/auth/signin')
+  }
 
   return (
     <section className="relative overflow-hidden bg-white">
@@ -56,11 +67,17 @@ export function HeroSection() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
             >
-              <button className="btn-primary text-lg px-8 py-4 flex items-center">
+              <button
+                onClick={handleGetStarted}
+                className="btn-primary text-lg px-8 py-4 flex items-center hover:scale-105 transition-transform"
+              >
                 Get Started Free
                 <ArrowRight className="ml-2 w-5 h-5" />
               </button>
-              <button className="btn-secondary text-lg px-8 py-4">
+              <button
+                onClick={handleWatchDemo}
+                className="btn-secondary text-lg px-8 py-4 hover:scale-105 transition-transform"
+              >
                 Watch Demo
               </button>
             </motion.div>
