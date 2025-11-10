@@ -6,16 +6,37 @@ import { DeepSeekService } from './providers/deepseek-service'
 import { QwenService } from './providers/qwen-service'
 
 export class UnifiedLLMService {
-  private openaiService: OpenAIService
-  private googleService: GoogleService
-  private deepSeekService: DeepSeekService
-  private qwenService: QwenService
+  private openaiService?: OpenAIService
+  private googleService?: GoogleService
+  private deepSeekService?: DeepSeekService
+  private qwenService?: QwenService
 
-  constructor() {
-    this.openaiService = new OpenAIService()
-    this.googleService = new GoogleService()
-    this.deepSeekService = new DeepSeekService()
-    this.qwenService = new QwenService()
+  private getOpenAIService(): OpenAIService {
+    if (!this.openaiService) {
+      this.openaiService = new OpenAIService()
+    }
+    return this.openaiService
+  }
+
+  private getGoogleService(): GoogleService {
+    if (!this.googleService) {
+      this.googleService = new GoogleService()
+    }
+    return this.googleService
+  }
+
+  private getDeepSeekService(): DeepSeekService {
+    if (!this.deepSeekService) {
+      this.deepSeekService = new DeepSeekService()
+    }
+    return this.deepSeekService
+  }
+
+  private getQwenService(): QwenService {
+    if (!this.qwenService) {
+      this.qwenService = new QwenService()
+    }
+    return this.qwenService
   }
 
   async generateContent(
@@ -29,13 +50,13 @@ export class UnifiedLLMService {
     try {
       switch (provider) {
         case 'openai':
-          return await this.openaiService.generateContent(prompt, { ...options, model })
+          return await this.getOpenAIService().generateContent(prompt, { ...options, model })
         case 'google':
-          return await this.googleService.generateContent(prompt, { ...options, model })
+          return await this.getGoogleService().generateContent(prompt, { ...options, model })
         case 'deepseek':
-          return await this.deepSeekService.generateContent(prompt, { ...options, model })
+          return await this.getDeepSeekService().generateContent(prompt, { ...options, model })
         case 'qwen3':
-          return await this.qwenService.generateContent(prompt, { ...options, model })
+          return await this.getQwenService().generateContent(prompt, { ...options, model })
         default:
           throw new Error(`Unsupported provider: ${provider}`)
       }
@@ -43,7 +64,7 @@ export class UnifiedLLMService {
       console.error(`Error with provider ${provider}:`, error)
       // Fallback to OpenAI if available
       if (provider !== 'openai') {
-        return await this.openaiService.generateContent(prompt, options)
+        return await this.getOpenAIService().generateContent(prompt, options)
       }
       throw error
     }
@@ -59,13 +80,13 @@ export class UnifiedLLMService {
     try {
       switch (provider) {
         case 'openai':
-          return await this.openaiService.generateForTask(taskType, input, { ...options, model })
+          return await this.getOpenAIService().generateForTask(taskType, input, { ...options, model })
         case 'google':
-          return await this.googleService.generateForTask(taskType, input, { ...options, model })
+          return await this.getGoogleService().generateForTask(taskType, input, { ...options, model })
         case 'deepseek':
-          return await this.deepSeekService.generateForTask(taskType, input, { ...options, model })
+          return await this.getDeepSeekService().generateForTask(taskType, input, { ...options, model })
         case 'qwen3':
-          return await this.qwenService.generateForTask(taskType, input, { ...options, model })
+          return await this.getQwenService().generateForTask(taskType, input, { ...options, model })
         default:
           throw new Error(`Unsupported provider: ${provider}`)
       }
@@ -86,16 +107,16 @@ export class UnifiedLLMService {
     try {
       switch (provider) {
         case 'openai':
-          await this.openaiService.generateStream(prompt, { ...options, model }, onChunk)
+          await this.getOpenAIService().generateStream(prompt, { ...options, model }, onChunk)
           break
         case 'google':
-          await this.googleService.generateStream(prompt, { ...options, model }, onChunk)
+          await this.getGoogleService().generateStream(prompt, { ...options, model }, onChunk)
           break
         case 'deepseek':
-          await this.deepSeekService.generateStream(prompt, { ...options, model }, onChunk)
+          await this.getDeepSeekService().generateStream(prompt, { ...options, model }, onChunk)
           break
         case 'qwen3':
-          await this.qwenService.generateStream(prompt, { ...options, model }, onChunk)
+          await this.getQwenService().generateStream(prompt, { ...options, model }, onChunk)
           break
         default:
           throw new Error(`Streaming not supported by provider: ${provider}`)
