@@ -239,7 +239,7 @@ export class KVService {
     try {
       const key = `queue:${queue}`
       const job = await kv.lpop(key)
-      return job ? JSON.parse(job) : null
+      return job && typeof job === 'string' ? JSON.parse(job) : null
     } catch (error) {
       console.error('Dequeue error:', error)
       return null
