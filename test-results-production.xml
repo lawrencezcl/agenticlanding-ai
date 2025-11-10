@@ -1,0 +1,402 @@
+<testsuites id="" name="" tests="9" failures="2" skipped="0" errors="0" time="64.93083">
+<testsuite name="production-e2e.spec.ts" timestamp="2025-11-10T16:07:13.871Z" hostname="chromium-production" tests="9" failures="2" skipped="0" time="117.85" errors="0">
+<testcase name="AgenticLanding AI - Production E2E Tests › 🏠 Homepage Functionality › Homepage loads properly with all elements" classname="production-e2e.spec.ts" time="21.24">
+<failure message="production-e2e.spec.ts:80:9 Homepage loads properly with all elements" type="FAILURE">
+<![CDATA[  [chromium-production] › production-e2e.spec.ts:80:9 › AgenticLanding AI - Production E2E Tests › 🏠 Homepage Functionality › Homepage loads properly with all elements 
+
+    Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+    Call log:
+      - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"
+
+
+      83 |
+      84 |         // Navigate to homepage
+    > 85 |         await page.goto('https://agenticlanding-ai.vercel.app', {
+         |                    ^
+      86 |           waitUntil: 'networkidle',
+      87 |           timeout: 45000
+      88 |         });
+        at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:85:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+    Call log:
+      - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"
+
+
+      83 |
+      84 |         // Navigate to homepage
+    > 85 |         await page.goto('https://agenticlanding-ai.vercel.app', {
+         |                    ^
+      86 |           waitUntil: 'networkidle',
+      87 |           timeout: 45000
+      88 |         });
+        at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:85:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[🔍 Testing homepage load...
+❌ Homepage failed to load
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"[22m
+
+
+📊 PRODUCTION E2E TEST REPORT
+============================
+Date: 2025-11-10T16:07:25.225Z
+Target: https://agenticlanding-ai.vercel.app
+
+SUMMARY:
+✅ Passed: 0
+⚠️  Warnings: 0
+❌ Failed: 1
+📈 Total: 1
+Success Rate: 0.0%
+
+DETAILED RESULTS:
+
+1. ❌ Homepage failed to load
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"[22m
+
+
+📄 Reports saved to test-results-production/
+
+[[ATTACHMENT|test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production/test-failed-1.png]]
+
+[[ATTACHMENT|test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production/video.webm]]
+🔍 Testing homepage load...
+❌ Homepage failed to load
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"[22m
+
+
+📊 PRODUCTION E2E TEST REPORT
+============================
+Date: 2025-11-10T16:07:36.209Z
+Target: https://agenticlanding-ai.vercel.app
+
+SUMMARY:
+✅ Passed: 0
+⚠️  Warnings: 0
+❌ Failed: 1
+📈 Total: 1
+Success Rate: 0.0%
+
+DETAILED RESULTS:
+
+1. ❌ Homepage failed to load
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"[22m
+
+
+📄 Reports saved to test-results-production/
+
+[[ATTACHMENT|test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/video.webm]]
+
+[[ATTACHMENT|test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="AgenticLanding AI - Production E2E Tests › 🏠 Homepage Functionality › All CTA buttons navigate correctly" classname="production-e2e.spec.ts" time="22.451">
+<failure message="production-e2e.spec.ts:155:9 All CTA buttons navigate correctly" type="FAILURE">
+<![CDATA[  [chromium-production] › production-e2e.spec.ts:155:9 › AgenticLanding AI - Production E2E Tests › 🏠 Homepage Functionality › All CTA buttons navigate correctly 
+
+    Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+    Call log:
+      - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "load"
+
+
+      156 |       console.log('🔍 Testing CTA button navigation...');
+      157 |
+    > 158 |       await page.goto('https://agenticlanding-ai.vercel.app');
+          |                  ^
+      159 |       await page.waitForTimeout(2000);
+      160 |
+      161 |       // Test Get Started button
+        at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:158:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+    Call log:
+      - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "load"
+
+
+      156 |       console.log('🔍 Testing CTA button navigation...');
+      157 |
+    > 158 |       await page.goto('https://agenticlanding-ai.vercel.app');
+          |                  ^
+      159 |       await page.waitForTimeout(2000);
+      160 |
+      161 |       // Test Get Started button
+        at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:158:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[🔍 Testing CTA button navigation...
+
+📊 PRODUCTION E2E TEST REPORT
+============================
+Date: 2025-11-10T16:07:47.951Z
+Target: https://agenticlanding-ai.vercel.app
+
+SUMMARY:
+✅ Passed: 0
+⚠️  Warnings: 0
+❌ Failed: 0
+📈 Total: 0
+Success Rate: NaN%
+
+DETAILED RESULTS:
+
+
+📄 Reports saved to test-results-production/
+
+[[ATTACHMENT|test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production/test-failed-1.png]]
+
+[[ATTACHMENT|test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production/video.webm]]
+🔍 Testing CTA button navigation...
+
+📊 PRODUCTION E2E TEST REPORT
+============================
+Date: 2025-11-10T16:08:00.671Z
+Target: https://agenticlanding-ai.vercel.app
+
+SUMMARY:
+✅ Passed: 0
+⚠️  Warnings: 0
+❌ Failed: 0
+📈 Total: 0
+Success Rate: NaN%
+
+DETAILED RESULTS:
+
+
+📄 Reports saved to test-results-production/
+
+[[ATTACHMENT|test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/video.webm]]
+
+[[ATTACHMENT|test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="AgenticLanding AI - Production E2E Tests › 🔐 Authentication Flow › Sign-in page loads and works" classname="production-e2e.spec.ts" time="10.63">
+<system-out>
+<![CDATA[🔍 Testing authentication flow...
+❌ Authentication flow test failed
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signin
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/auth/signin", waiting until "networkidle"[22m
+
+
+📊 PRODUCTION E2E TEST REPORT
+============================
+Date: 2025-11-10T16:08:13.579Z
+Target: https://agenticlanding-ai.vercel.app
+
+SUMMARY:
+✅ Passed: 0
+⚠️  Warnings: 0
+❌ Failed: 1
+📈 Total: 1
+Success Rate: 0.0%
+
+DETAILED RESULTS:
+
+1. ❌ Authentication flow test failed
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signin
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/auth/signin", waiting until "networkidle"[22m
+
+
+📄 Reports saved to test-results-production/
+]]>
+</system-out>
+</testcase>
+<testcase name="AgenticLanding AI - Production E2E Tests › 🔐 Authentication Flow › Check for /auth/signup 404 error" classname="production-e2e.spec.ts" time="10.732">
+<system-out>
+<![CDATA[🔍 Testing /auth/signup endpoint...
+❌ /auth/signup test failed
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signup
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/auth/signup", waiting until "networkidle"[22m
+
+]]>
+</system-out>
+</testcase>
+<testcase name="AgenticLanding AI - Production E2E Tests › 📱 Responsive Design › Responsive design - Mobile" classname="production-e2e.spec.ts" time="10.511">
+<system-out>
+<![CDATA[❌ Responsive test failed for Mobile
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"[22m
+
+]]>
+</system-out>
+</testcase>
+<testcase name="AgenticLanding AI - Production E2E Tests › 📱 Responsive Design › Responsive design - Tablet" classname="production-e2e.spec.ts" time="10.504">
+<system-out>
+<![CDATA[❌ Responsive test failed for Tablet
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"[22m
+
+
+📊 PRODUCTION E2E TEST REPORT
+============================
+Date: 2025-11-10T16:07:46.245Z
+Target: https://agenticlanding-ai.vercel.app
+
+SUMMARY:
+✅ Passed: 0
+⚠️  Warnings: 0
+❌ Failed: 3
+📈 Total: 3
+Success Rate: 0.0%
+
+DETAILED RESULTS:
+
+1. ❌ /auth/signup test failed
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signup
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/auth/signup", waiting until "networkidle"[22m
+
+2. ❌ Responsive test failed for Mobile
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"[22m
+
+3. ❌ Responsive test failed for Tablet
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"[22m
+
+
+📄 Reports saved to test-results-production/
+]]>
+</system-out>
+</testcase>
+<testcase name="AgenticLanding AI - Production E2E Tests › 📱 Responsive Design › Responsive design - Desktop" classname="production-e2e.spec.ts" time="10.727">
+<system-out>
+<![CDATA[❌ Responsive test failed for Desktop
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"[22m
+
+]]>
+</system-out>
+</testcase>
+<testcase name="AgenticLanding AI - Production E2E Tests › 🚀 Dashboard Access › Dashboard loads after authentication (mock test)" classname="production-e2e.spec.ts" time="10.558">
+<system-out>
+<![CDATA[🔍 Testing dashboard access...
+⚠️ Dashboard test inconclusive (possibly redirects to auth)
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/dashboard
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/dashboard", waiting until "networkidle"[22m
+
+]]>
+</system-out>
+</testcase>
+<testcase name="AgenticLanding AI - Production E2E Tests › 🔍 404 Error Detection › Check for broken links and navigation" classname="production-e2e.spec.ts" time="10.497">
+<system-out>
+<![CDATA[🔍 Checking for broken links...
+⚠️ Link testing incomplete
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "load"[22m
+
+
+📊 PRODUCTION E2E TEST REPORT
+============================
+Date: 2025-11-10T16:07:46.289Z
+Target: https://agenticlanding-ai.vercel.app
+
+SUMMARY:
+✅ Passed: 0
+⚠️  Warnings: 2
+❌ Failed: 1
+📈 Total: 3
+Success Rate: 0.0%
+
+DETAILED RESULTS:
+
+1. ❌ Responsive test failed for Desktop
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "networkidle"[22m
+
+2. ⚠️ Dashboard test inconclusive (possibly redirects to auth)
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/dashboard
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/dashboard", waiting until "networkidle"[22m
+
+3. ⚠️ Link testing incomplete
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/", waiting until "load"[22m
+
+
+📄 Reports saved to test-results-production/
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

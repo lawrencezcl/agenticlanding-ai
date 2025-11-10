@@ -1,0 +1,861 @@
+{
+  "config": {
+    "configFile": "/Users/chenglinzhang/Downloads/IgnyteSitecore/playwright.config.production.ts",
+    "rootDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Test Environment": "Production",
+      "Target URL": "https://agenticlanding-ai.vercel.app",
+      "Test Suite": "Comprehensive E2E Production Tests",
+      "Timestamp": "2025-11-10T16:07:08.676Z",
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report-production"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results-production.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results-production.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "Test Environment": "Production",
+          "Target URL": "https://agenticlanding-ai.vercel.app",
+          "Test Suite": "Comprehensive E2E Production Tests",
+          "Timestamp": "2025-11-10T16:07:08.676Z",
+          "actualWorkers": 3
+        },
+        "id": "chromium-production",
+        "name": "chromium-production",
+        "testDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "Test Environment": "Production",
+          "Target URL": "https://agenticlanding-ai.vercel.app",
+          "Test Suite": "Comprehensive E2E Production Tests",
+          "Timestamp": "2025-11-10T16:07:08.676Z",
+          "actualWorkers": 3
+        },
+        "id": "firefox-production",
+        "name": "firefox-production",
+        "testDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "Test Environment": "Production",
+          "Target URL": "https://agenticlanding-ai.vercel.app",
+          "Test Suite": "Comprehensive E2E Production Tests",
+          "Timestamp": "2025-11-10T16:07:08.676Z",
+          "actualWorkers": 3
+        },
+        "id": "webkit-production",
+        "name": "webkit-production",
+        "testDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "Test Environment": "Production",
+          "Target URL": "https://agenticlanding-ai.vercel.app",
+          "Test Suite": "Comprehensive E2E Production Tests",
+          "Timestamp": "2025-11-10T16:07:08.676Z",
+          "actualWorkers": 3
+        },
+        "id": "Mobile Chrome-production",
+        "name": "Mobile Chrome-production",
+        "testDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "Test Environment": "Production",
+          "Target URL": "https://agenticlanding-ai.vercel.app",
+          "Test Suite": "Comprehensive E2E Production Tests",
+          "Timestamp": "2025-11-10T16:07:08.676Z",
+          "actualWorkers": 3
+        },
+        "id": "Mobile Safari-production",
+        "name": "Mobile Safari-production",
+        "testDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "Test Environment": "Production",
+          "Target URL": "https://agenticlanding-ai.vercel.app",
+          "Test Suite": "Comprehensive E2E Production Tests",
+          "Timestamp": "2025-11-10T16:07:08.676Z",
+          "actualWorkers": 3
+        },
+        "id": "Tablet-production",
+        "name": "Tablet-production",
+        "testDir": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "production-e2e.spec.ts",
+      "file": "production-e2e.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "AgenticLanding AI - Production E2E Tests",
+          "file": "production-e2e.spec.ts",
+          "line": 65,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "🏠 Homepage Functionality",
+              "file": "production-e2e.spec.ts",
+              "line": 79,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Homepage loads properly with all elements",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-production",
+                      "projectName": "chromium-production",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 10738,
+                          "error": {
+                            "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n",
+                            "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:85:20",
+                            "location": {
+                              "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                              "column": 20,
+                              "line": 85
+                            },
+                            "snippet": "  83 |\n  84 |         // Navigate to homepage\n> 85 |         await page.goto('https://agenticlanding-ai.vercel.app', {\n     |                    ^\n  86 |           waitUntil: 'networkidle',\n  87 |           timeout: 45000\n  88 |         });"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                                "column": 20,
+                                "line": 85
+                              },
+                              "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n\n  83 |\n  84 |         // Navigate to homepage\n> 85 |         await page.goto('https://agenticlanding-ai.vercel.app', {\n     |                    ^\n  86 |           waitUntil: 'networkidle',\n  87 |           timeout: 45000\n  88 |         });\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:85:20"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing homepage load...\n"
+                            },
+                            {
+                              "text": "❌ Homepage failed to load\n"
+                            },
+                            {
+                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:07:25.225Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 1\n📈 Total: 1\nSuccess Rate: 0.0%\n\nDETAILED RESULTS:\n\n1. ❌ Homepage failed to load\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-10T16:07:14.265Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production/video.webm"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                            "column": 20,
+                            "line": 85
+                          }
+                        },
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 10502,
+                          "error": {
+                            "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n",
+                            "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:85:20",
+                            "location": {
+                              "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                              "column": 20,
+                              "line": 85
+                            },
+                            "snippet": "  83 |\n  84 |         // Navigate to homepage\n> 85 |         await page.goto('https://agenticlanding-ai.vercel.app', {\n     |                    ^\n  86 |           waitUntil: 'networkidle',\n  87 |           timeout: 45000\n  88 |         });"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                                "column": 20,
+                                "line": 85
+                              },
+                              "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n\n  83 |\n  84 |         // Navigate to homepage\n> 85 |         await page.goto('https://agenticlanding-ai.vercel.app', {\n     |                    ^\n  86 |           waitUntil: 'networkidle',\n  87 |           timeout: 45000\n  88 |         });\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:85:20"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing homepage load...\n"
+                            },
+                            {
+                              "text": "❌ Homepage failed to load\n"
+                            },
+                            {
+                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:07:36.209Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 1\n📈 Total: 1\nSuccess Rate: 0.0%\n\nDETAILED RESULTS:\n\n1. ❌ Homepage failed to load\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2025-11-10T16:07:25.566Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/video.webm"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                            "column": 20,
+                            "line": 85
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-afa22943394bac1cd333",
+                  "file": "production-e2e.spec.ts",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "All CTA buttons navigate correctly",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-production",
+                      "projectName": "chromium-production",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 11191,
+                          "error": {
+                            "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n",
+                            "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:158:18",
+                            "location": {
+                              "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                              "column": 18,
+                              "line": 158
+                            },
+                            "snippet": "  156 |       console.log('🔍 Testing CTA button navigation...');\n  157 |\n> 158 |       await page.goto('https://agenticlanding-ai.vercel.app');\n      |                  ^\n  159 |       await page.waitForTimeout(2000);\n  160 |\n  161 |       // Test Get Started button"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                                "column": 18,
+                                "line": 158
+                              },
+                              "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  156 |       console.log('🔍 Testing CTA button navigation...');\n  157 |\n> 158 |       await page.goto('https://agenticlanding-ai.vercel.app');\n      |                  ^\n  159 |       await page.waitForTimeout(2000);\n  160 |\n  161 |       // Test Get Started button\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:158:18"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing CTA button navigation...\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:07:47.951Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 0\n📈 Total: 0\nSuccess Rate: NaN%\n\nDETAILED RESULTS:\n\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-10T16:07:36.610Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production/video.webm"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                            "column": 18,
+                            "line": 158
+                          }
+                        },
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 11260,
+                          "error": {
+                            "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n",
+                            "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:158:18",
+                            "location": {
+                              "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                              "column": 18,
+                              "line": 158
+                            },
+                            "snippet": "  156 |       console.log('🔍 Testing CTA button navigation...');\n  157 |\n> 158 |       await page.goto('https://agenticlanding-ai.vercel.app');\n      |                  ^\n  159 |       await page.waitForTimeout(2000);\n  160 |\n  161 |       // Test Get Started button"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                                "column": 18,
+                                "line": 158
+                              },
+                              "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  156 |       console.log('🔍 Testing CTA button navigation...');\n  157 |\n> 158 |       await page.goto('https://agenticlanding-ai.vercel.app');\n      |                  ^\n  159 |       await page.waitForTimeout(2000);\n  160 |\n  161 |       // Test Get Started button\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:158:18"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing CTA button navigation...\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:08:00.671Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 0\n📈 Total: 0\nSuccess Rate: NaN%\n\nDETAILED RESULTS:\n\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2025-11-10T16:07:49.064Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/video.webm"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
+                            "column": 18,
+                            "line": 158
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-22c0ceb1e69b266ddeea",
+                  "file": "production-e2e.spec.ts",
+                  "line": 155,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "🔐 Authentication Flow",
+              "file": "production-e2e.spec.ts",
+              "line": 292,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Sign-in page loads and works",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-production",
+                      "projectName": "chromium-production",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10630,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing authentication flow...\n"
+                            },
+                            {
+                              "text": "❌ Authentication flow test failed\n"
+                            },
+                            {
+                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signin\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/auth/signin\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:08:13.579Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 1\n📈 Total: 1\nSuccess Rate: 0.0%\n\nDETAILED RESULTS:\n\n1. ❌ Authentication flow test failed\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signin\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/auth/signin\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-10T16:08:02.533Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-115a134e9279a056b5e4",
+                  "file": "production-e2e.spec.ts",
+                  "line": 293,
+                  "column": 9
+                },
+                {
+                  "title": "Check for /auth/signup 404 error",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-production",
+                      "projectName": "chromium-production",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 10732,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing /auth/signup endpoint...\n"
+                            },
+                            {
+                              "text": "❌ /auth/signup test failed\n"
+                            },
+                            {
+                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signup\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/auth/signup\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-10T16:07:14.263Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-fc348947afdb25ea881b",
+                  "file": "production-e2e.spec.ts",
+                  "line": 363,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "📱 Responsive Design",
+              "file": "production-e2e.spec.ts",
+              "line": 410,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Responsive design - Mobile",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-production",
+                      "projectName": "chromium-production",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 10511,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "❌ Responsive test failed for Mobile\n"
+                            },
+                            {
+                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-10T16:07:25.207Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-053901fd6646aa4c4fbf",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Tablet",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-production",
+                      "projectName": "chromium-production",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 10504,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "❌ Responsive test failed for Tablet\n"
+                            },
+                            {
+                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:07:46.245Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 3\n📈 Total: 3\nSuccess Rate: 0.0%\n\nDETAILED RESULTS:\n\n1. ❌ /auth/signup test failed\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signup\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/auth/signup\", waiting until \"networkidle\"\u001b[22m\n\n2. ❌ Responsive test failed for Mobile\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n3. ❌ Responsive test failed for Tablet\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-10T16:07:35.729Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-c5ee5b856cc6b0fb7b6d",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Desktop",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-production",
+                      "projectName": "chromium-production",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 10727,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "❌ Responsive test failed for Desktop\n"
+                            },
+                            {
+                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-10T16:07:14.264Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-5f8500ea88a4387e0ed6",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                }
+              ]
+            },
+            {
+              "title": "🚀 Dashboard Access",
+              "file": "production-e2e.spec.ts",
+              "line": 482,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Dashboard loads after authentication (mock test)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-production",
+                      "projectName": "chromium-production",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 10558,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing dashboard access...\n"
+                            },
+                            {
+                              "text": "⚠️ Dashboard test inconclusive (possibly redirects to auth)\n"
+                            },
+                            {
+                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/dashboard\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-10T16:07:25.206Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-392e9e0e1835889dc578",
+                  "file": "production-e2e.spec.ts",
+                  "line": 483,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "🔍 404 Error Detection",
+              "file": "production-e2e.spec.ts",
+              "line": 551,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "Check for broken links and navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-production",
+                      "projectName": "chromium-production",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 10497,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Checking for broken links...\n"
+                            },
+                            {
+                              "text": "⚠️ Link testing incomplete\n"
+                            },
+                            {
+                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:07:46.289Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 2\n❌ Failed: 1\n📈 Total: 3\nSuccess Rate: 0.0%\n\nDETAILED RESULTS:\n\n1. ❌ Responsive test failed for Desktop\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n2. ⚠️ Dashboard test inconclusive (possibly redirects to auth)\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/dashboard\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n3. ⚠️ Link testing incomplete\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-10T16:07:35.773Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-052509430635cd623cfd",
+                  "file": "production-e2e.spec.ts",
+                  "line": 552,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-11-10T16:07:08.682Z",
+    "duration": 64930.83,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

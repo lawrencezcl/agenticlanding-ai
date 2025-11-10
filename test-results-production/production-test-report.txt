@@ -1,0 +1,19 @@
+
+📊 PRODUCTION E2E TEST REPORT
+============================
+Date: 2025-11-10T16:08:13.579Z
+Target: https://agenticlanding-ai.vercel.app
+
+SUMMARY:
+✅ Passed: 0
+⚠️  Warnings: 0
+❌ Failed: 1
+📈 Total: 1
+Success Rate: 0.0%
+
+DETAILED RESULTS:
+
+1. ❌ Authentication flow test failed
+   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signin
+Call log:
+[2m  - navigating to "https://agenticlanding-ai.vercel.app/auth/signin", waiting until "networkidle"[22m
