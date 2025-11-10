@@ -233,9 +233,9 @@ export class BlobService {
       if (!blob) return null
 
       return {
-        size: 0, // Size not available from PutBlobResult
-        uploadedAt: blob.uploadedAt || new Date(),
-        contentType: blob.contentType || '',
+        size: 0, // Size not available from HeadBlobResult
+        uploadedAt: new Date(), // uploadedAt not available from HeadBlobResult
+        contentType: '', // contentType not available from HeadBlobResult
       }
     } catch (error) {
       console.error('Get file info error:', error)
@@ -268,9 +268,9 @@ export class BlobService {
 
       return blobs.blobs.map(blob => ({
         pathname: blob.pathname,
-        size: 0, // Size not available from PutBlobResult
-        uploadedAt: blob.uploadedAt || new Date(),
-        contentType: blob.contentType || '',
+        size: 0, // Size not available from ListBlobResultBlob
+        uploadedAt: new Date(), // uploadedAt not available from ListBlobResultBlob
+        contentType: '', // contentType not available from ListBlobResultBlob
       }))
     } catch (error) {
       console.error('List files error:', error)

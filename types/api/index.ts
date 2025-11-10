@@ -213,3 +213,34 @@ export interface SafetyRating {
   severity: 'low' | 'medium' | 'high'
   confidence: number
 }
+
+// NextAuth type extensions
+declare module "next-auth" {
+  interface Session {
+    user: {
+      id: string
+      name?: string | null
+      email?: string | null
+      image?: string | null
+      plan?: string
+      company?: string
+    }
+  }
+
+  interface User {
+    id: string
+    name?: string | null
+    email?: string | null
+    image?: string | null
+    plan?: string
+    company?: string
+  }
+}
+
+declare module "next-auth/jwt" {
+  interface JWT {
+    id: string
+    plan?: string
+    company?: string
+  }
+}

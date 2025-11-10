@@ -1,34 +1,3 @@
 {
-  "version": 2,
-  "functions": {
-    "app/api/**/*.ts": {
-      "runtime": "nodejs18.x",
-      "memory": 1024,
-      "maxDuration": 30
-    }
-  },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
-  "env": {
-    "NEXTAUTH_URL": "@nextauth_url",
-    "NEXTAUTH_SECRET": "@nextauth_secret",
-    "OPENAI_API_KEY": "@openai_api_key",
-    "GOOGLE_AI_API_KEY": "@google_ai_api_key",
-    "DEEPSEEK_API_KEY": "@deepseek_api_key",
-    "QWEN_API_KEY": "@qwen_api_key",
-    "DATABASE_URL": "@database_url",
-    "KV_REST_API_URL": "@kv_rest_api_url",
-    "KV_REST_API_TOKEN": "@kv_rest_api_token",
-    "BLOB_READ_WRITE_TOKEN": "@blob_read_write_token"
-  },
-  "regions": ["iad1", "hnd1"],
   "framework": "nextjs"
 }
