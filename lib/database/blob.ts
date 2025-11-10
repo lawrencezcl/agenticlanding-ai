@@ -36,7 +36,7 @@ export class BlobService {
         url: blob.url,
         pathname: blob.pathname,
         contentType: blob.contentType || '',
-        size: blob.size || 0,
+        size: 0, // Size not available from PutBlobResult
       }
     } catch (error) {
       console.error('Upload asset error:', error)
@@ -99,7 +99,7 @@ export class BlobService {
         url: blob.url,
         pathname: blob.pathname,
         contentType: blob.contentType || '',
-        size: blob.size || 0,
+        size: 0, // Size not available from PutBlobResult
       }
     } catch (error) {
       console.error('Upload brand asset error:', error)
@@ -233,7 +233,7 @@ export class BlobService {
       if (!blob) return null
 
       return {
-        size: blob.size || 0,
+        size: 0, // Size not available from PutBlobResult
         uploadedAt: blob.uploadedAt || new Date(),
         contentType: blob.contentType || '',
       }
@@ -268,7 +268,7 @@ export class BlobService {
 
       return blobs.blobs.map(blob => ({
         pathname: blob.pathname,
-        size: blob.size || 0,
+        size: 0, // Size not available from PutBlobResult
         uploadedAt: blob.uploadedAt || new Date(),
         contentType: blob.contentType || '',
       }))
@@ -300,7 +300,7 @@ export class BlobService {
       return {
         url: blob.url,
         pathname: blob.pathname,
-        size: blob.size || 0,
+        size: 0, // Size not available from PutBlobResult
       }
     } catch (error) {
       console.error('Upload user content error:', error)
