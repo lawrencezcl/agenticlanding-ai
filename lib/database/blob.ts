@@ -320,7 +320,7 @@ export class BlobService {
     try {
       const filename = `backups/${backupType}/${date}.json`
       const blob = await put(filename, JSON.stringify(data, null, 2), {
-        access: 'private',
+        access: 'public',
         contentType: 'application/json',
         addRandomSuffix: false,
       })
