@@ -1,0 +1,23 @@
+# Epic 2: Section-by-Section Control Module - Quality Gate
+
+# risk_summary (paste into gate file):
+risk_summary:
+  totals:
+    critical: 4 # score 9
+    high: 5 # score 6
+    medium: 3 # score 4
+    low: 2 # score 2-3
+  highest:
+    id: TECH-001
+    score: 9
+    title: 'Multi-LLM prompt interpretation failures'
+  recommendations:
+    must_fix:
+      - 'Implement standardized prompt templates and validation'
+      - 'Create LLM-specific prompt optimization strategies'
+      - 'Implement comprehensive input sanitization and output encoding'
+      - 'Add component-level memoization and optimization'
+    monitor:
+      - 'Add security alerts for content validation failures'
+      - 'Monitor preview generation performance metrics'
+      - 'Track LLM API response times and error rates'

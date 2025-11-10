@@ -1,0 +1,23 @@
+# Epic 1: Data-Driven Generation Module - Quality Gate
+
+# risk_summary (paste into gate file):
+risk_summary:
+  totals:
+    critical: 3 # score 9
+    high: 4 # score 6
+    medium: 3 # score 4
+    low: 2 # score 2-3
+  highest:
+    id: TECH-001
+    score: 9
+    title: 'Multi-LLM integration data parsing failures'
+  recommendations:
+    must_fix:
+      - 'Implement robust fallback mechanisms between LLM providers'
+      - 'Create standardized abstraction layer for LLM API calls'
+      - 'Implement comprehensive security scanning for file uploads'
+      - 'Add memory monitoring and automatic scaling triggers'
+    monitor:
+      - 'Add security alerts for API endpoint monitoring'
+      - 'Monitor memory usage and processing performance'
+      - 'Track LLM provider API availability and response times'

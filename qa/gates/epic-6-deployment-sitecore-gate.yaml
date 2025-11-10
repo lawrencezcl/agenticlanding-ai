@@ -1,0 +1,23 @@
+# Epic 6: One-Click Deployment & Sitecore Integration Module - Quality Gate
+
+# risk_summary (paste into gate file):
+risk_summary:
+  totals:
+    critical: 5 # score 9
+    high: 6 # score 6
+    medium: 3 # score 4
+    low: 1 # score 2
+  highest:
+    id: TECH-001
+    score: 9
+    title: 'Sitecore BYOC component export compatibility'
+  recommendations:
+    must_fix:
+      - 'Implement comprehensive Sitecore SDK compatibility testing'
+      - 'Create detailed field mapping validation system'
+      - 'Implement comprehensive security scanning for deployment artifacts'
+      - 'Create comprehensive rollback mechanisms and deployment health checks'
+    monitor:
+      - 'Monitor deployment success rates and timing'
+      - 'Track Sitecore integration performance and compatibility'
+      - 'Monitor SSL certificate status and renewal'

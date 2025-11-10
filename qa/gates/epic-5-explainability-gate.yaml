@@ -1,0 +1,23 @@
+# Epic 5: Explainability Module - Quality Gate
+
+# risk_summary (paste into gate file):
+risk_summary:
+  totals:
+    critical: 2 # score 9
+    high: 3 # score 6
+    medium: 3 # score 4
+    low: 2 # score 2-3
+  highest:
+    id: TECH-001
+    score: 9
+    title: 'Multi-LLM rationale generation consistency'
+  recommendations:
+    must_fix:
+      - 'Implement standardized rationale generation templates'
+      - 'Create cross-validation system for rationale consistency'
+      - 'Implement asynchronous PDF generation with progress tracking'
+      - 'Develop human review process for critical decisions'
+    monitor:
+      - 'Monitor rationale generation performance and quality'
+      - 'Track PDF generation success rates and timing'
+      - 'Monitor user interaction patterns with explanations'

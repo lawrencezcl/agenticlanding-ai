@@ -1,0 +1,23 @@
+# Epic 3: Auto Form Builder Module - Quality Gate
+
+# risk_summary (paste into gate file):
+risk_summary:
+  totals:
+    critical: 5 # score 9
+    high: 6 # score 6
+    medium: 3 # score 4
+    low: 2 # score 2-3
+  highest:
+    id: SEC-001
+    score: 9
+    title: 'Payment processing security vulnerabilities'
+  recommendations:
+    must_fix:
+      - 'Implement PCI DSS compliance for payment processing'
+      - 'Use Stripe Elements for secure payment collection'
+      - 'Conduct legal review of compliance implementation'
+      - 'Implement comprehensive input validation and sanitization'
+    monitor:
+      - 'Add security alerts for payment processing'
+      - 'Monitor CRM API sync status and error rates'
+      - 'Track webhook delivery success rates'
