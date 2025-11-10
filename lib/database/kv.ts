@@ -256,6 +256,30 @@ export class KVService {
     }
   }
 
+  // Generic set method
+  async set(key: string, value: string, ttl?: number): Promise<void> {
+    try {
+      if (ttl) {
+        await kv.setex(key, ttl, value)
+      } else {
+        await kv.set(key, value)
+      }
+    } catch (error) {
+      console.error('KV set error:', error)
+      throw error
+    }
+  }
+
+  // Generic get method
+  async get(key: string): Promise<string | null> {
+    try {
+      return await kv.get(key)
+    } catch (error) {
+      console.error('KV get error:', error)
+      return null
+    }
+  }
+
   // Health check
   async healthCheck(): Promise<boolean> {
     try {
