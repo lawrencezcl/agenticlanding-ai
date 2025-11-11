@@ -5,7 +5,11 @@ import GitHubProvider from 'next-auth/providers/github'
 import EmailProvider from 'next-auth/providers/email'
 import { databaseService } from '@/lib/database'
 
+// Import the adapter
+import { CustomAdapter } from './adapter'
+
 export const authOptions: NextAuthOptions = {
+  adapter: CustomAdapter(),
   providers: [
     // Google OAuth provider (only if credentials are available)
     ...(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET ? [
