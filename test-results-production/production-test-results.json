@@ -1,7 +1,6 @@
 [
   {
-    "status": "failed",
-    "message": "Authentication flow test failed",
-    "error": "page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signin\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/auth/signin\", waiting until \"networkidle\"\u001b[22m\n"
+    "status": "warning",
+    "message": "Dashboard loads but may have missing content"
   }
 ]
