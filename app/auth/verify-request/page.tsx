@@ -1,3 +1,6 @@
+// Force dynamic rendering for this auth page
+export const dynamic = 'force-dynamic'
+
 import Link from 'next/link'
 import { Mail, ArrowLeft, RefreshCw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
