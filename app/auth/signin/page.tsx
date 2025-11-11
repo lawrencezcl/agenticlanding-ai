@@ -15,15 +15,25 @@ export default function SignInPage() {
   const [email, setEmail] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [loadingProviders, setLoadingProviders] = useState(true)
   const router = useRouter()
 
   useEffect(() => {
     const fetchProviders = async () => {
       try {
+        setLoadingProviders(true)
         const res = await getProviders()
         setProviders(res)
+
+        // If no providers available, show a helpful message
+        if (!res || Object.keys(res).length === 0) {
+          setError('Authentication is currently being configured. Please try again in a few minutes.')
+        }
       } catch (error) {
         console.error('Error fetching providers:', error)
+        setError('Authentication service is temporarily unavailable. Please try again later.')
+      } finally {
+        setLoadingProviders(false)
       }
     }
     fetchProviders()

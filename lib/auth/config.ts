@@ -2,30 +2,39 @@ import NextAuth from 'next-auth'
 import { NextAuthOptions } from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 import GitHubProvider from 'next-auth/providers/github'
+import EmailProvider from 'next-auth/providers/email'
 import { databaseService } from '@/lib/database'
 
 export const authOptions: NextAuthOptions = {
   providers: [
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID || '',
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET || '',
+    // Google OAuth provider (only if credentials are available)
+    ...(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET ? [
+      GoogleProvider({
+        clientId: process.env.GOOGLE_CLIENT_ID,
+        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      })
+    ] : []),
+
+    // GitHub OAuth provider (only if credentials are available)
+    ...(process.env.GITHUB_ID && process.env.GITHUB_SECRET ? [
+      GitHubProvider({
+        clientId: process.env.GITHUB_ID,
+        clientSecret: process.env.GITHUB_SECRET,
+      })
+    ] : []),
+
+    // Email provider with magic links (always available as fallback)
+    EmailProvider({
+      server: {
+        host: process.env.EMAIL_SERVER_HOST || 'localhost',
+        port: parseInt(process.env.EMAIL_SERVER_PORT || '1025'),
+        auth: {
+          user: process.env.EMAIL_SERVER_USER || '',
+          pass: process.env.EMAIL_SERVER_PASSWORD || '',
+        },
+      },
+      from: process.env.EMAIL_FROM || 'noreply@agenticlanding.ai',
     }),
-    GitHubProvider({
-      clientId: process.env.GITHUB_ID || '',
-      clientSecret: process.env.GITHUB_SECRET || '',
-    }),
-    // Email provider temporarily disabled - requires adapter configuration
-    // EmailProvider({
-    //   server: {
-    //     host: process.env.EMAIL_SERVER_HOST,
-    //     port: process.env.EMAIL_SERVER_PORT,
-    //     auth: {
-    //       user: process.env.EMAIL_SERVER_USER,
-    //       pass: process.env.EMAIL_SERVER_PASSWORD,
-    //     },
-    //   },
-    //   from: process.env.EMAIL_FROM,
-    // }),
   ],
 
   callbacks: {

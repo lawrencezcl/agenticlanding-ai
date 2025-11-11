@@ -1,6 +1,26 @@
 [
   {
+    "status": "passed",
+    "message": "Responsive design works on Desktop",
+    "details": {
+      "successRate": 100,
+      "viewport": {
+        "name": "Desktop",
+        "width": 1920,
+        "height": 1080
+      }
+    }
+  },
+  {
     "status": "warning",
     "message": "Dashboard loads but may have missing content"
+  },
+  {
+    "status": "passed",
+    "message": "No broken links found in sample test",
+    "details": {
+      "tested": 0,
+      "total": 0
+    }
   }
 ]

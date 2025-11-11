@@ -14,8 +14,8 @@
       "Test Environment": "Production",
       "Target URL": "https://agenticlanding-ai.vercel.app",
       "Test Suite": "Comprehensive E2E Production Tests",
-      "Timestamp": "2025-11-10T16:07:08.676Z",
-      "actualWorkers": 3
+      "Timestamp": "2025-11-11T03:05:42.269Z",
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -56,8 +56,8 @@
           "Test Environment": "Production",
           "Target URL": "https://agenticlanding-ai.vercel.app",
           "Test Suite": "Comprehensive E2E Production Tests",
-          "Timestamp": "2025-11-10T16:07:08.676Z",
-          "actualWorkers": 3
+          "Timestamp": "2025-11-11T03:05:42.269Z",
+          "actualWorkers": 4
         },
         "id": "chromium-production",
         "name": "chromium-production",
@@ -76,8 +76,8 @@
           "Test Environment": "Production",
           "Target URL": "https://agenticlanding-ai.vercel.app",
           "Test Suite": "Comprehensive E2E Production Tests",
-          "Timestamp": "2025-11-10T16:07:08.676Z",
-          "actualWorkers": 3
+          "Timestamp": "2025-11-11T03:05:42.269Z",
+          "actualWorkers": 4
         },
         "id": "firefox-production",
         "name": "firefox-production",
@@ -96,8 +96,8 @@
           "Test Environment": "Production",
           "Target URL": "https://agenticlanding-ai.vercel.app",
           "Test Suite": "Comprehensive E2E Production Tests",
-          "Timestamp": "2025-11-10T16:07:08.676Z",
-          "actualWorkers": 3
+          "Timestamp": "2025-11-11T03:05:42.269Z",
+          "actualWorkers": 4
         },
         "id": "webkit-production",
         "name": "webkit-production",
@@ -116,8 +116,8 @@
           "Test Environment": "Production",
           "Target URL": "https://agenticlanding-ai.vercel.app",
           "Test Suite": "Comprehensive E2E Production Tests",
-          "Timestamp": "2025-11-10T16:07:08.676Z",
-          "actualWorkers": 3
+          "Timestamp": "2025-11-11T03:05:42.269Z",
+          "actualWorkers": 4
         },
         "id": "Mobile Chrome-production",
         "name": "Mobile Chrome-production",
@@ -136,8 +136,8 @@
           "Test Environment": "Production",
           "Target URL": "https://agenticlanding-ai.vercel.app",
           "Test Suite": "Comprehensive E2E Production Tests",
-          "Timestamp": "2025-11-10T16:07:08.676Z",
-          "actualWorkers": 3
+          "Timestamp": "2025-11-11T03:05:42.269Z",
+          "actualWorkers": 4
         },
         "id": "Mobile Safari-production",
         "name": "Mobile Safari-production",
@@ -156,8 +156,8 @@
           "Test Environment": "Production",
           "Target URL": "https://agenticlanding-ai.vercel.app",
           "Test Suite": "Comprehensive E2E Production Tests",
-          "Timestamp": "2025-11-10T16:07:08.676Z",
-          "actualWorkers": 3
+          "Timestamp": "2025-11-11T03:05:42.269Z",
+          "actualWorkers": 4
         },
         "id": "Tablet-production",
         "name": "Tablet-production",
@@ -199,7 +199,7 @@
               "specs": [
                 {
                   "title": "Homepage loads properly with all elements",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -212,138 +212,25 @@
                         {
                           "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 10738,
-                          "error": {
-                            "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n",
-                            "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:85:20",
-                            "location": {
-                              "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                              "column": 20,
-                              "line": 85
-                            },
-                            "snippet": "  83 |\n  84 |         // Navigate to homepage\n> 85 |         await page.goto('https://agenticlanding-ai.vercel.app', {\n     |                    ^\n  86 |           waitUntil: 'networkidle',\n  87 |           timeout: 45000\n  88 |         });"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                                "column": 20,
-                                "line": 85
-                              },
-                              "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n\n  83 |\n  84 |         // Navigate to homepage\n> 85 |         await page.goto('https://agenticlanding-ai.vercel.app', {\n     |                    ^\n  86 |           waitUntil: 'networkidle',\n  87 |           timeout: 45000\n  88 |         });\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:85:20"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 8306,
+                          "errors": [],
                           "stdout": [
                             {
                               "text": "🔍 Testing homepage load...\n"
                             },
                             {
-                              "text": "❌ Homepage failed to load\n"
-                            },
-                            {
-                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
-                            },
-                            {
-                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:07:25.225Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 1\n📈 Total: 1\nSuccess Rate: 0.0%\n\nDETAILED RESULTS:\n\n1. ❌ Homepage failed to load\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
-                            },
-                            {
-                              "text": "\n📄 Reports saved to test-results-production/\n"
+                              "text": "❌ Critical elements missing from homepage\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-11-10T16:07:14.265Z",
+                          "startTime": "2025-11-11T03:05:49.657Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production/test-failed-1.png"
-                            },
-                            {
-                              "name": "video",
-                              "contentType": "video/webm",
-                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production/video.webm"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                            "column": 20,
-                            "line": 85
-                          }
-                        },
-                        {
-                          "workerIndex": 3,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 10502,
-                          "error": {
-                            "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n",
-                            "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:85:20",
-                            "location": {
-                              "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                              "column": 20,
-                              "line": 85
-                            },
-                            "snippet": "  83 |\n  84 |         // Navigate to homepage\n> 85 |         await page.goto('https://agenticlanding-ai.vercel.app', {\n     |                    ^\n  86 |           waitUntil: 'networkidle',\n  87 |           timeout: 45000\n  88 |         });"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                                "column": 20,
-                                "line": 85
-                              },
-                              "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n\n  83 |\n  84 |         // Navigate to homepage\n> 85 |         await page.goto('https://agenticlanding-ai.vercel.app', {\n     |                    ^\n  86 |           waitUntil: 'networkidle',\n  87 |           timeout: 45000\n  88 |         });\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:85:20"
-                            }
-                          ],
-                          "stdout": [
-                            {
-                              "text": "🔍 Testing homepage load...\n"
-                            },
-                            {
-                              "text": "❌ Homepage failed to load\n"
-                            },
-                            {
-                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
-                            },
-                            {
-                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:07:36.209Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 1\n📈 Total: 1\nSuccess Rate: 0.0%\n\nDETAILED RESULTS:\n\n1. ❌ Homepage failed to load\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
-                            },
-                            {
-                              "text": "\n📄 Reports saved to test-results-production/\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 1,
-                          "startTime": "2025-11-10T16:07:25.566Z",
-                          "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/test-failed-1.png"
-                            },
-                            {
-                              "name": "video",
-                              "contentType": "video/webm",
-                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/video.webm"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-6e812--properly-with-all-elements-chromium-production-retry1/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                            "column": 20,
-                            "line": 85
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
                   "id": "2b76d1c8ae61aba48bfb-afa22943394bac1cd333",
@@ -353,7 +240,7 @@
                 },
                 {
                   "title": "All CTA buttons navigate correctly",
-                  "ok": false,
+                  "ok": true,
                   "tags": [],
                   "tests": [
                     {
@@ -364,131 +251,476 @@
                       "projectName": "chromium-production",
                       "results": [
                         {
-                          "workerIndex": 4,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 11191,
-                          "error": {
-                            "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n",
-                            "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:158:18",
-                            "location": {
-                              "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                              "column": 18,
-                              "line": 158
-                            },
-                            "snippet": "  156 |       console.log('🔍 Testing CTA button navigation...');\n  157 |\n> 158 |       await page.goto('https://agenticlanding-ai.vercel.app');\n      |                  ^\n  159 |       await page.waitForTimeout(2000);\n  160 |\n  161 |       // Test Get Started button"
-                          },
-                          "errors": [
-                            {
-                              "location": {
-                                "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                                "column": 18,
-                                "line": 158
-                              },
-                              "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  156 |       console.log('🔍 Testing CTA button navigation...');\n  157 |\n> 158 |       await page.goto('https://agenticlanding-ai.vercel.app');\n      |                  ^\n  159 |       await page.waitForTimeout(2000);\n  160 |\n  161 |       // Test Get Started button\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:158:18"
-                            }
-                          ],
+                          "status": "passed",
+                          "duration": 9924,
+                          "errors": [],
                           "stdout": [
                             {
                               "text": "🔍 Testing CTA button navigation...\n"
                             },
                             {
-                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:07:47.951Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 0\n📈 Total: 0\nSuccess Rate: NaN%\n\nDETAILED RESULTS:\n\n"
+                              "text": "✅ Get Started button navigates to authentication\n"
                             },
                             {
-                              "text": "\n📄 Reports saved to test-results-production/\n"
+                              "text": "✅ Watch Demo button triggers appropriate action\n"
+                            },
+                            {
+                              "text": "⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-11-10T16:07:36.610Z",
+                          "startTime": "2025-11-11T03:05:58.274Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production/test-failed-1.png"
-                            },
-                            {
-                              "name": "video",
-                              "contentType": "video/webm",
-                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production/video.webm"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                            "column": 18,
-                            "line": 158
-                          }
-                        },
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-22c0ceb1e69b266ddeea",
+                  "file": "production-e2e.spec.ts",
+                  "line": 155,
+                  "column": 9
+                },
+                {
+                  "title": "Homepage loads properly with all elements",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox-production",
+                      "projectName": "firefox-production",
+                      "results": [
                         {
-                          "workerIndex": 5,
-                          "parallelIndex": 0,
-                          "status": "failed",
-                          "duration": 11260,
-                          "error": {
-                            "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n",
-                            "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:158:18",
-                            "location": {
-                              "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                              "column": 18,
-                              "line": 158
-                            },
-                            "snippet": "  156 |       console.log('🔍 Testing CTA button navigation...');\n  157 |\n> 158 |       await page.goto('https://agenticlanding-ai.vercel.app');\n      |                  ^\n  159 |       await page.waitForTimeout(2000);\n  160 |\n  161 |       // Test Get Started button"
-                          },
-                          "errors": [
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 7817,
+                          "errors": [],
+                          "stdout": [
                             {
-                              "location": {
-                                "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                                "column": 18,
-                                "line": 158
-                              },
-                              "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  156 |       console.log('🔍 Testing CTA button navigation...');\n  157 |\n> 158 |       await page.goto('https://agenticlanding-ai.vercel.app');\n      |                  ^\n  159 |       await page.waitForTimeout(2000);\n  160 |\n  161 |       // Test Get Started button\n    at /Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts:158:18"
+                              "text": "🔍 Testing homepage load...\n"
+                            },
+                            {
+                              "text": "❌ Critical elements missing from homepage\n"
                             }
                           ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:05:49.660Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-71c0846bb84f618290e8",
+                  "file": "production-e2e.spec.ts",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "All CTA buttons navigate correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox-production",
+                      "projectName": "firefox-production",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 10230,
+                          "errors": [],
                           "stdout": [
                             {
                               "text": "🔍 Testing CTA button navigation...\n"
                             },
                             {
-                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:08:00.671Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 0\n📈 Total: 0\nSuccess Rate: NaN%\n\nDETAILED RESULTS:\n\n"
+                              "text": "✅ Get Started button navigates to authentication\n"
                             },
                             {
-                              "text": "\n📄 Reports saved to test-results-production/\n"
+                              "text": "✅ Watch Demo button triggers appropriate action\n"
+                            },
+                            {
+                              "text": "⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n"
                             }
                           ],
                           "stderr": [],
-                          "retry": 1,
-                          "startTime": "2025-11-10T16:07:49.064Z",
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:01.254Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/test-failed-1.png"
-                            },
-                            {
-                              "name": "video",
-                              "contentType": "video/webm",
-                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/video.webm"
-                            },
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/chenglinzhang/Downloads/IgnyteSitecore/test-results-production/production-e2e-AgenticLand-a9217--buttons-navigate-correctly-chromium-production-retry1/trace.zip"
-                            }
-                          ],
-                          "errorLocation": {
-                            "file": "/Users/chenglinzhang/Downloads/IgnyteSitecore/tests/e2e/production/production-e2e.spec.ts",
-                            "column": 18,
-                            "line": 158
-                          }
+                          "attachments": []
                         }
                       ],
-                      "status": "unexpected"
+                      "status": "expected"
                     }
                   ],
-                  "id": "2b76d1c8ae61aba48bfb-22c0ceb1e69b266ddeea",
+                  "id": "2b76d1c8ae61aba48bfb-7cfd7de3fb40171c78c8",
+                  "file": "production-e2e.spec.ts",
+                  "line": 155,
+                  "column": 9
+                },
+                {
+                  "title": "Homepage loads properly with all elements",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit-production",
+                      "projectName": "webkit-production",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 9645,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing homepage load...\n"
+                            },
+                            {
+                              "text": "❌ Critical elements missing from homepage\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:13.155Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-74612e3202b092fa417b",
+                  "file": "production-e2e.spec.ts",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "All CTA buttons navigate correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit-production",
+                      "projectName": "webkit-production",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10261,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing CTA button navigation...\n"
+                            },
+                            {
+                              "text": "✅ Get Started button navigates to authentication\n"
+                            },
+                            {
+                              "text": "✅ Watch Demo button triggers appropriate action\n"
+                            },
+                            {
+                              "text": "⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:23.569Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-26e5a210ca164a156ff5",
+                  "file": "production-e2e.spec.ts",
+                  "line": 155,
+                  "column": 9
+                },
+                {
+                  "title": "Homepage loads properly with all elements",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome-production",
+                      "projectName": "Mobile Chrome-production",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 7362,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing homepage load...\n"
+                            },
+                            {
+                              "text": "❌ Critical elements missing from homepage\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:18.071Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-fbaa98a72648683e4777",
+                  "file": "production-e2e.spec.ts",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "All CTA buttons navigate correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome-production",
+                      "projectName": "Mobile Chrome-production",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 9782,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing CTA button navigation...\n"
+                            },
+                            {
+                              "text": "✅ Get Started button navigates to authentication\n"
+                            },
+                            {
+                              "text": "✅ Watch Demo button triggers appropriate action\n"
+                            },
+                            {
+                              "text": "⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:25.786Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-c577144e1fff9f3880d4",
+                  "file": "production-e2e.spec.ts",
+                  "line": 155,
+                  "column": 9
+                },
+                {
+                  "title": "Homepage loads properly with all elements",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari-production",
+                      "projectName": "Mobile Safari-production",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 7574,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing homepage load...\n"
+                            },
+                            {
+                              "text": "❌ Critical elements missing from homepage\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:37.816Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-97fba53dd7dbb3954c4d",
+                  "file": "production-e2e.spec.ts",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "All CTA buttons navigate correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari-production",
+                      "projectName": "Mobile Safari-production",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 20030,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing CTA button navigation...\n"
+                            },
+                            {
+                              "text": "✅ Get Started button navigates to authentication\n"
+                            },
+                            {
+                              "text": "✅ Watch Demo button triggers appropriate action\n"
+                            },
+                            {
+                              "text": "⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:45.656Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-b67cb134c70ef89e8394",
+                  "file": "production-e2e.spec.ts",
+                  "line": 155,
+                  "column": 9
+                },
+                {
+                  "title": "Homepage loads properly with all elements",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Tablet-production",
+                      "projectName": "Tablet-production",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 9910,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing homepage load...\n"
+                            },
+                            {
+                              "text": "❌ Critical elements missing from homepage\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:05.820Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-322af88d8e9cf6d315a6",
+                  "file": "production-e2e.spec.ts",
+                  "line": 80,
+                  "column": 9
+                },
+                {
+                  "title": "All CTA buttons navigate correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Tablet-production",
+                      "projectName": "Tablet-production",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 15388,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing CTA button navigation...\n"
+                            },
+                            {
+                              "text": "✅ Get Started button navigates to authentication\n"
+                            },
+                            {
+                              "text": "✅ Watch Demo button triggers appropriate action\n"
+                            },
+                            {
+                              "text": "⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:15.946Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-9be380f409d110c796a9",
                   "file": "production-e2e.spec.ts",
                   "line": 155,
                   "column": 9
@@ -514,23 +746,26 @@
                       "projectName": "chromium-production",
                       "results": [
                         {
-                          "workerIndex": 6,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 10630,
+                          "duration": 4427,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "🔍 Testing authentication flow...\n"
                             },
                             {
-                              "text": "❌ Authentication flow test failed\n"
+                              "text": "✅ Sign-in page loads successfully\n"
                             },
                             {
-                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signin\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/auth/signin\", waiting until \"networkidle\"\u001b[22m\n\n"
+                              "text": "⚠️ Missing OAuth providers\n"
                             },
                             {
-                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:08:13.579Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 1\n📈 Total: 1\nSuccess Rate: 0.0%\n\nDETAILED RESULTS:\n\n1. ❌ Authentication flow test failed\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signin\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/auth/signin\", waiting until \"networkidle\"\u001b[22m\n\n"
+                              "text": "⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:12.651Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 3\n❌ Failed: 1\n📈 Total: 7\nSuccess Rate: 42.9%\n\nDETAILED RESULTS:\n\n1. ❌ Critical elements missing from homepage\n   Details: {\n  \"missingElements\": [\n    \".grid.grid-cols-1, .grid.grid-cols-3\"\n  ]\n}\n2. ✅ Get Started button navigates to authentication\n3. ✅ Watch Demo button triggers appropriate action\n4. ⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n5. ✅ Sign-in page loads successfully\n6. ⚠️ Missing OAuth providers\n   Details: {\n  \"hasGoogle\": false,\n  \"hasGithub\": false\n}\n7. ⚠️ Email authentication form not found\n"
                             },
                             {
                               "text": "\n📄 Reports saved to test-results-production/\n"
@@ -538,7 +773,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-11-10T16:08:02.533Z",
+                          "startTime": "2025-11-11T03:06:08.208Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -567,22 +802,19 @@
                           "workerIndex": 1,
                           "parallelIndex": 1,
                           "status": "passed",
-                          "duration": 10732,
+                          "duration": 3193,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "🔍 Testing /auth/signup endpoint...\n"
                             },
                             {
-                              "text": "❌ /auth/signup test failed\n"
-                            },
-                            {
-                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signup\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/auth/signup\", waiting until \"networkidle\"\u001b[22m\n\n"
+                              "text": "✅ /auth/signup loads successfully\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-11-10T16:07:14.263Z",
+                          "startTime": "2025-11-11T03:05:49.653Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -591,6 +823,476 @@
                     }
                   ],
                   "id": "2b76d1c8ae61aba48bfb-fc348947afdb25ea881b",
+                  "file": "production-e2e.spec.ts",
+                  "line": 363,
+                  "column": 9
+                },
+                {
+                  "title": "Sign-in page loads and works",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox-production",
+                      "projectName": "firefox-production",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 3628,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing authentication flow...\n"
+                            },
+                            {
+                              "text": "✅ Sign-in page loads successfully\n"
+                            },
+                            {
+                              "text": "⚠️ Missing OAuth providers\n"
+                            },
+                            {
+                              "text": "⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:15.159Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 3\n❌ Failed: 1\n📈 Total: 7\nSuccess Rate: 42.9%\n\nDETAILED RESULTS:\n\n1. ❌ Critical elements missing from homepage\n   Details: {\n  \"missingElements\": [\n    \".grid.grid-cols-1, .grid.grid-cols-3\"\n  ]\n}\n2. ✅ Get Started button navigates to authentication\n3. ✅ Watch Demo button triggers appropriate action\n4. ⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n5. ✅ Sign-in page loads successfully\n6. ⚠️ Missing OAuth providers\n   Details: {\n  \"hasGoogle\": false,\n  \"hasGithub\": false\n}\n7. ⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:11.512Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-749d1282c96e0e61ee5f",
+                  "file": "production-e2e.spec.ts",
+                  "line": 293,
+                  "column": 9
+                },
+                {
+                  "title": "Check for /auth/signup 404 error",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox-production",
+                      "projectName": "firefox-production",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2809,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing /auth/signup endpoint...\n"
+                            },
+                            {
+                              "text": "✅ /auth/signup loads successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:01.121Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-980db60f318251685eaf",
+                  "file": "production-e2e.spec.ts",
+                  "line": 363,
+                  "column": 9
+                },
+                {
+                  "title": "Sign-in page loads and works",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit-production",
+                      "projectName": "webkit-production",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3615,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing authentication flow...\n"
+                            },
+                            {
+                              "text": "✅ Sign-in page loads successfully\n"
+                            },
+                            {
+                              "text": "⚠️ Missing OAuth providers\n"
+                            },
+                            {
+                              "text": "⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:37.474Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 3\n❌ Failed: 1\n📈 Total: 7\nSuccess Rate: 42.9%\n\nDETAILED RESULTS:\n\n1. ❌ Critical elements missing from homepage\n   Details: {\n  \"missingElements\": [\n    \".grid.grid-cols-1, .grid.grid-cols-3\"\n  ]\n}\n2. ✅ Get Started button navigates to authentication\n3. ✅ Watch Demo button triggers appropriate action\n4. ⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n5. ✅ Sign-in page loads successfully\n6. ⚠️ Missing OAuth providers\n   Details: {\n  \"hasGoogle\": false,\n  \"hasGithub\": false\n}\n7. ⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:33.840Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-a130f85e755d1d99b063",
+                  "file": "production-e2e.spec.ts",
+                  "line": 293,
+                  "column": 9
+                },
+                {
+                  "title": "Check for /auth/signup 404 error",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit-production",
+                      "projectName": "webkit-production",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2634,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing /auth/signup endpoint...\n"
+                            },
+                            {
+                              "text": "✅ /auth/signup loads successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:13.941Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-a1a89e3b485bc991497f",
+                  "file": "production-e2e.spec.ts",
+                  "line": 363,
+                  "column": 9
+                },
+                {
+                  "title": "Sign-in page loads and works",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome-production",
+                      "projectName": "Mobile Chrome-production",
+                      "results": [
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 3518,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing authentication flow...\n"
+                            },
+                            {
+                              "text": "✅ Sign-in page loads successfully\n"
+                            },
+                            {
+                              "text": "⚠️ Missing OAuth providers\n"
+                            },
+                            {
+                              "text": "⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:39.106Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 3\n❌ Failed: 1\n📈 Total: 7\nSuccess Rate: 42.9%\n\nDETAILED RESULTS:\n\n1. ❌ Critical elements missing from homepage\n   Details: {\n  \"missingElements\": [\n    \".grid.grid-cols-1, .grid.grid-cols-3\"\n  ]\n}\n2. ✅ Get Started button navigates to authentication\n3. ✅ Watch Demo button triggers appropriate action\n4. ⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n5. ✅ Sign-in page loads successfully\n6. ⚠️ Missing OAuth providers\n   Details: {\n  \"hasGoogle\": false,\n  \"hasGithub\": false\n}\n7. ⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:35.577Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-ef9f47c662520ac1c8bc",
+                  "file": "production-e2e.spec.ts",
+                  "line": 293,
+                  "column": 9
+                },
+                {
+                  "title": "Check for /auth/signup 404 error",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome-production",
+                      "projectName": "Mobile Chrome-production",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1718,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing /auth/signup endpoint...\n"
+                            },
+                            {
+                              "text": "✅ /auth/signup loads successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:28.219Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-f31e516ebd09f5a4f91d",
+                  "file": "production-e2e.spec.ts",
+                  "line": 363,
+                  "column": 9
+                },
+                {
+                  "title": "Sign-in page loads and works",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari-production",
+                      "projectName": "Mobile Safari-production",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3675,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing authentication flow...\n"
+                            },
+                            {
+                              "text": "✅ Sign-in page loads successfully\n"
+                            },
+                            {
+                              "text": "⚠️ Missing OAuth providers\n"
+                            },
+                            {
+                              "text": "⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:07:09.394Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 3\n❌ Failed: 1\n📈 Total: 7\nSuccess Rate: 42.9%\n\nDETAILED RESULTS:\n\n1. ❌ Critical elements missing from homepage\n   Details: {\n  \"missingElements\": [\n    \".grid.grid-cols-1, .grid.grid-cols-3\"\n  ]\n}\n2. ✅ Get Started button navigates to authentication\n3. ✅ Watch Demo button triggers appropriate action\n4. ⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n5. ✅ Sign-in page loads successfully\n6. ⚠️ Missing OAuth providers\n   Details: {\n  \"hasGoogle\": false,\n  \"hasGithub\": false\n}\n7. ⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:05.695Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-9f8ccc01d28697c65b7c",
+                  "file": "production-e2e.spec.ts",
+                  "line": 293,
+                  "column": 9
+                },
+                {
+                  "title": "Check for /auth/signup 404 error",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari-production",
+                      "projectName": "Mobile Safari-production",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 1926,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing /auth/signup endpoint...\n"
+                            },
+                            {
+                              "text": "✅ /auth/signup loads successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:39.507Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-23d58a0329cd297b2bc0",
+                  "file": "production-e2e.spec.ts",
+                  "line": 363,
+                  "column": 9
+                },
+                {
+                  "title": "Sign-in page loads and works",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Tablet-production",
+                      "projectName": "Tablet-production",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 3578,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing authentication flow...\n"
+                            },
+                            {
+                              "text": "✅ Sign-in page loads successfully\n"
+                            },
+                            {
+                              "text": "⚠️ Missing OAuth providers\n"
+                            },
+                            {
+                              "text": "⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:07:34.955Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 3\n❌ Failed: 1\n📈 Total: 7\nSuccess Rate: 42.9%\n\nDETAILED RESULTS:\n\n1. ❌ Critical elements missing from homepage\n   Details: {\n  \"missingElements\": [\n    \".grid.grid-cols-1, .grid.grid-cols-3\"\n  ]\n}\n2. ✅ Get Started button navigates to authentication\n3. ✅ Watch Demo button triggers appropriate action\n4. ⚠️ CTA Section with Start Free Trial/Schedule Demo not found\n5. ✅ Sign-in page loads successfully\n6. ⚠️ Missing OAuth providers\n   Details: {\n  \"hasGoogle\": false,\n  \"hasGithub\": false\n}\n7. ⚠️ Email authentication form not found\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:31.359Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-bac72492528298f7c41b",
+                  "file": "production-e2e.spec.ts",
+                  "line": 293,
+                  "column": 9
+                },
+                {
+                  "title": "Check for /auth/signup 404 error",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Tablet-production",
+                      "projectName": "Tablet-production",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5173,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing /auth/signup endpoint...\n"
+                            },
+                            {
+                              "text": "✅ /auth/signup loads successfully\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:09.756Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-b69fd3608403d24b45a1",
                   "file": "production-e2e.spec.ts",
                   "line": 363,
                   "column": 9
@@ -619,19 +1321,16 @@
                           "workerIndex": 1,
                           "parallelIndex": 1,
                           "status": "passed",
-                          "duration": 10511,
+                          "duration": 3459,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "❌ Responsive test failed for Mobile\n"
-                            },
-                            {
-                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                              "text": "✅ Responsive design works on Mobile\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-11-10T16:07:25.207Z",
+                          "startTime": "2025-11-11T03:05:53.167Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -660,17 +1359,14 @@
                           "workerIndex": 1,
                           "parallelIndex": 1,
                           "status": "passed",
-                          "duration": 10504,
+                          "duration": 3539,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "❌ Responsive test failed for Tablet\n"
+                              "text": "✅ Responsive design works on Tablet\n"
                             },
                             {
-                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
-                            },
-                            {
-                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:07:46.245Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 0\n❌ Failed: 3\n📈 Total: 3\nSuccess Rate: 0.0%\n\nDETAILED RESULTS:\n\n1. ❌ /auth/signup test failed\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/auth/signup\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/auth/signup\", waiting until \"networkidle\"\u001b[22m\n\n2. ❌ Responsive test failed for Mobile\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n3. ❌ Responsive test failed for Tablet\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:00.190Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 0\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 100.0%\n\nDETAILED RESULTS:\n\n1. ✅ /auth/signup loads successfully\n2. ✅ Responsive design works on Mobile\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Mobile\",\n    \"width\": 375,\n    \"height\": 667\n  }\n}\n3. ✅ Responsive design works on Tablet\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Tablet\",\n    \"width\": 768,\n    \"height\": 1024\n  }\n}\n"
                             },
                             {
                               "text": "\n📄 Reports saved to test-results-production/\n"
@@ -678,7 +1374,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-11-10T16:07:35.729Z",
+                          "startTime": "2025-11-11T03:05:56.640Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -707,19 +1403,16 @@
                           "workerIndex": 2,
                           "parallelIndex": 2,
                           "status": "passed",
-                          "duration": 10727,
+                          "duration": 5247,
                           "errors": [],
                           "stdout": [
                             {
-                              "text": "❌ Responsive test failed for Desktop\n"
-                            },
-                            {
-                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                              "text": "✅ Responsive design works on Desktop\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-11-10T16:07:14.264Z",
+                          "startTime": "2025-11-11T03:05:49.656Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -728,6 +1421,609 @@
                     }
                   ],
                   "id": "2b76d1c8ae61aba48bfb-5f8500ea88a4387e0ed6",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Mobile",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox-production",
+                      "projectName": "firefox-production",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 4079,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Mobile\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:04.824Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-fdcbd297efc54163957e",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Tablet",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox-production",
+                      "projectName": "firefox-production",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 4120,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Tablet\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:13.060Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 0\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 100.0%\n\nDETAILED RESULTS:\n\n1. ✅ /auth/signup loads successfully\n2. ✅ Responsive design works on Mobile\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Mobile\",\n    \"width\": 375,\n    \"height\": 667\n  }\n}\n3. ✅ Responsive design works on Tablet\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Tablet\",\n    \"width\": 768,\n    \"height\": 1024\n  }\n}\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:08.926Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-436b613d061483a6df83",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Desktop",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox-production",
+                      "projectName": "firefox-production",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 5089,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Desktop\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:03.094Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-7e50a9caf607edd11aa3",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Mobile",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit-production",
+                      "projectName": "webkit-production",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 5482,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Mobile\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:16.888Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-93212d1f55158713d495",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Tablet",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit-production",
+                      "projectName": "webkit-production",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 5335,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Tablet\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:27.755Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 0\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 100.0%\n\nDETAILED RESULTS:\n\n1. ✅ /auth/signup loads successfully\n2. ✅ Responsive design works on Mobile\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Mobile\",\n    \"width\": 375,\n    \"height\": 667\n  }\n}\n3. ✅ Responsive design works on Tablet\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Tablet\",\n    \"width\": 768,\n    \"height\": 1024\n  }\n}\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:22.401Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-e9419985bbb0847a5ad7",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Desktop",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit-production",
+                      "projectName": "webkit-production",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 6214,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Desktop\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:16.185Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-42c35f1bb2087c2be1be",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Mobile",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome-production",
+                      "projectName": "Mobile Chrome-production",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 3739,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Mobile\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:30.077Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-a9de010a0e6cd1776c34",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Tablet",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome-production",
+                      "projectName": "Mobile Chrome-production",
+                      "results": [
+                        {
+                          "workerIndex": 10,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 31275,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "❌ Responsive test failed for Tablet\n"
+                            },
+                            {
+                              "text": "   Error: page.goto: net::ERR_TIMED_OUT at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:07:05.123Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 2\n⚠️  Warnings: 0\n❌ Failed: 1\n📈 Total: 3\nSuccess Rate: 66.7%\n\nDETAILED RESULTS:\n\n1. ✅ /auth/signup loads successfully\n2. ✅ Responsive design works on Mobile\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Mobile\",\n    \"width\": 375,\n    \"height\": 667\n  }\n}\n3. ❌ Responsive test failed for Tablet\n   Error: page.goto: net::ERR_TIMED_OUT at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:33.833Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-2064a22a365f1c862fe8",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Desktop",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome-production",
+                      "projectName": "Mobile Chrome-production",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 4114,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Desktop\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:31.756Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-326896d4eda5f9f95bea",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Mobile",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari-production",
+                      "projectName": "Mobile Safari-production",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 22671,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Mobile\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:41.672Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-64da65846093d82a5c1e",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Tablet",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari-production",
+                      "projectName": "Mobile Safari-production",
+                      "results": [
+                        {
+                          "workerIndex": 13,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 24734,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Tablet\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:07:29.122Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 0\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 100.0%\n\nDETAILED RESULTS:\n\n1. ✅ /auth/signup loads successfully\n2. ✅ Responsive design works on Mobile\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Mobile\",\n    \"width\": 375,\n    \"height\": 667\n  }\n}\n3. ✅ Responsive design works on Tablet\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Tablet\",\n    \"width\": 768,\n    \"height\": 1024\n  }\n}\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:04.367Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-2b6e39f3a4d5dc8ec7ae",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Desktop",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari-production",
+                      "projectName": "Mobile Safari-production",
+                      "results": [
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 23473,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Desktop\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:43.087Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-e24a9a1d8112bdfc70c5",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Mobile",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Tablet-production",
+                      "projectName": "Tablet-production",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 12905,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Mobile\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:15.895Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-47e95a84954ffc5a92da",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Tablet",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Tablet-production",
+                      "projectName": "Tablet-production",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3518,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Tablet\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:07:32.351Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 3\n⚠️  Warnings: 0\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 100.0%\n\nDETAILED RESULTS:\n\n1. ✅ /auth/signup loads successfully\n2. ✅ Responsive design works on Mobile\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Mobile\",\n    \"width\": 375,\n    \"height\": 667\n  }\n}\n3. ✅ Responsive design works on Tablet\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Tablet\",\n    \"width\": 768,\n    \"height\": 1024\n  }\n}\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:28.820Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-e8f9ac48149536dccd4b",
+                  "file": "production-e2e.spec.ts",
+                  "line": 418,
+                  "column": 11
+                },
+                {
+                  "title": "Responsive design - Desktop",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Tablet-production",
+                      "projectName": "Tablet-production",
+                      "results": [
+                        {
+                          "workerIndex": 17,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 3464,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Responsive design works on Desktop\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:29.538Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-8b8e30221998255868b6",
                   "file": "production-e2e.spec.ts",
                   "line": 418,
                   "column": 11
@@ -756,22 +2052,19 @@
                           "workerIndex": 2,
                           "parallelIndex": 2,
                           "status": "passed",
-                          "duration": 10558,
+                          "duration": 4788,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "🔍 Testing dashboard access...\n"
                             },
                             {
-                              "text": "⚠️ Dashboard test inconclusive (possibly redirects to auth)\n"
-                            },
-                            {
-                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/dashboard\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n"
+                              "text": "⚠️ Dashboard loads but may have missing content\n"
                             }
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-11-10T16:07:25.206Z",
+                          "startTime": "2025-11-11T03:05:55.239Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -780,6 +2073,211 @@
                     }
                   ],
                   "id": "2b76d1c8ae61aba48bfb-392e9e0e1835889dc578",
+                  "file": "production-e2e.spec.ts",
+                  "line": 483,
+                  "column": 9
+                },
+                {
+                  "title": "Dashboard loads after authentication (mock test)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox-production",
+                      "projectName": "firefox-production",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 4367,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing dashboard access...\n"
+                            },
+                            {
+                              "text": "⚠️ Dashboard loads but may have missing content\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:09.314Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-00b4025fa31b7830e373",
+                  "file": "production-e2e.spec.ts",
+                  "line": 483,
+                  "column": 9
+                },
+                {
+                  "title": "Dashboard loads after authentication (mock test)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit-production",
+                      "projectName": "webkit-production",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 5016,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing dashboard access...\n"
+                            },
+                            {
+                              "text": "⚠️ Dashboard loads but may have missing content\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:22.684Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-62fdd9cdd3b3e2949aa4",
+                  "file": "production-e2e.spec.ts",
+                  "line": 483,
+                  "column": 9
+                },
+                {
+                  "title": "Dashboard loads after authentication (mock test)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome-production",
+                      "projectName": "Mobile Chrome-production",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 4029,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing dashboard access...\n"
+                            },
+                            {
+                              "text": "⚠️ Dashboard loads but may have missing content\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:36.054Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-322ff1b079b40739c89c",
+                  "file": "production-e2e.spec.ts",
+                  "line": 483,
+                  "column": 9
+                },
+                {
+                  "title": "Dashboard loads after authentication (mock test)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari-production",
+                      "projectName": "Mobile Safari-production",
+                      "results": [
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 4131,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing dashboard access...\n"
+                            },
+                            {
+                              "text": "⚠️ Dashboard loads but may have missing content\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:06.812Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-62a0ab09ec542cc331c6",
+                  "file": "production-e2e.spec.ts",
+                  "line": 483,
+                  "column": 9
+                },
+                {
+                  "title": "Dashboard loads after authentication (mock test)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Tablet-production",
+                      "projectName": "Tablet-production",
+                      "results": [
+                        {
+                          "workerIndex": 17,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 4210,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Testing dashboard access...\n"
+                            },
+                            {
+                              "text": "⚠️ Dashboard loads but may have missing content\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:33.141Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-ca1d99337dccf508186b",
                   "file": "production-e2e.spec.ts",
                   "line": 483,
                   "column": 9
@@ -808,20 +2306,17 @@
                           "workerIndex": 2,
                           "parallelIndex": 2,
                           "status": "passed",
-                          "duration": 10497,
+                          "duration": 2394,
                           "errors": [],
                           "stdout": [
                             {
                               "text": "🔍 Checking for broken links...\n"
                             },
                             {
-                              "text": "⚠️ Link testing incomplete\n"
+                              "text": "✅ No broken links found in sample test\n"
                             },
                             {
-                              "text": "   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n"
-                            },
-                            {
-                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-10T16:07:46.289Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 0\n⚠️  Warnings: 2\n❌ Failed: 1\n📈 Total: 3\nSuccess Rate: 0.0%\n\nDETAILED RESULTS:\n\n1. ❌ Responsive test failed for Desktop\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"networkidle\"\u001b[22m\n\n2. ⚠️ Dashboard test inconclusive (possibly redirects to auth)\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/dashboard\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/dashboard\", waiting until \"networkidle\"\u001b[22m\n\n3. ⚠️ Link testing incomplete\n   Error: page.goto: net::ERR_CONNECTION_RESET at https://agenticlanding-ai.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://agenticlanding-ai.vercel.app/\", waiting until \"load\"\u001b[22m\n\n"
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:02.452Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 2\n⚠️  Warnings: 1\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 66.7%\n\nDETAILED RESULTS:\n\n1. ✅ Responsive design works on Desktop\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Desktop\",\n    \"width\": 1920,\n    \"height\": 1080\n  }\n}\n2. ⚠️ Dashboard loads but may have missing content\n3. ✅ No broken links found in sample test\n   Details: {\n  \"tested\": 0,\n  \"total\": 0\n}\n"
                             },
                             {
                               "text": "\n📄 Reports saved to test-results-production/\n"
@@ -829,7 +2324,7 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-11-10T16:07:35.773Z",
+                          "startTime": "2025-11-11T03:06:00.038Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -838,6 +2333,241 @@
                     }
                   ],
                   "id": "2b76d1c8ae61aba48bfb-052509430635cd623cfd",
+                  "file": "production-e2e.spec.ts",
+                  "line": 552,
+                  "column": 9
+                },
+                {
+                  "title": "Check for broken links and navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox-production",
+                      "projectName": "firefox-production",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 2747,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Checking for broken links...\n"
+                            },
+                            {
+                              "text": "✅ No broken links found in sample test\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:16.472Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 2\n⚠️  Warnings: 1\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 66.7%\n\nDETAILED RESULTS:\n\n1. ✅ Responsive design works on Desktop\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Desktop\",\n    \"width\": 1920,\n    \"height\": 1080\n  }\n}\n2. ⚠️ Dashboard loads but may have missing content\n3. ✅ No broken links found in sample test\n   Details: {\n  \"tested\": 0,\n  \"total\": 0\n}\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:13.691Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-147099e5511bfacb5ec2",
+                  "file": "production-e2e.spec.ts",
+                  "line": 552,
+                  "column": 9
+                },
+                {
+                  "title": "Check for broken links and navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit-production",
+                      "projectName": "webkit-production",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 3514,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Checking for broken links...\n"
+                            },
+                            {
+                              "text": "✅ No broken links found in sample test\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:31.245Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 2\n⚠️  Warnings: 1\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 66.7%\n\nDETAILED RESULTS:\n\n1. ✅ Responsive design works on Desktop\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Desktop\",\n    \"width\": 1920,\n    \"height\": 1080\n  }\n}\n2. ⚠️ Dashboard loads but may have missing content\n3. ✅ No broken links found in sample test\n   Details: {\n  \"tested\": 0,\n  \"total\": 0\n}\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:27.712Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-44b5f5de76571865fcd8",
+                  "file": "production-e2e.spec.ts",
+                  "line": 552,
+                  "column": 9
+                },
+                {
+                  "title": "Check for broken links and navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome-production",
+                      "projectName": "Mobile Chrome-production",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2514,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Checking for broken links...\n"
+                            },
+                            {
+                              "text": "✅ No broken links found in sample test\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:06:42.624Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 2\n⚠️  Warnings: 1\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 66.7%\n\nDETAILED RESULTS:\n\n1. ✅ Responsive design works on Desktop\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Desktop\",\n    \"width\": 1920,\n    \"height\": 1080\n  }\n}\n2. ⚠️ Dashboard loads but may have missing content\n3. ✅ No broken links found in sample test\n   Details: {\n  \"tested\": 0,\n  \"total\": 0\n}\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:06:40.093Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-930cbd302bea0afa3ebc",
+                  "file": "production-e2e.spec.ts",
+                  "line": 552,
+                  "column": 9
+                },
+                {
+                  "title": "Check for broken links and navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Safari-production",
+                      "projectName": "Mobile Safari-production",
+                      "results": [
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 18025,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Checking for broken links...\n"
+                            },
+                            {
+                              "text": "✅ No broken links found in sample test\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:07:29.015Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 2\n⚠️  Warnings: 1\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 66.7%\n\nDETAILED RESULTS:\n\n1. ✅ Responsive design works on Desktop\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Desktop\",\n    \"width\": 1920,\n    \"height\": 1080\n  }\n}\n2. ⚠️ Dashboard loads but may have missing content\n3. ✅ No broken links found in sample test\n   Details: {\n  \"tested\": 0,\n  \"total\": 0\n}\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:10.965Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-400b8712fcd3fc38151a",
+                  "file": "production-e2e.spec.ts",
+                  "line": 552,
+                  "column": 9
+                },
+                {
+                  "title": "Check for broken links and navigation",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Tablet-production",
+                      "projectName": "Tablet-production",
+                      "results": [
+                        {
+                          "workerIndex": 17,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 2380,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "🔍 Checking for broken links...\n"
+                            },
+                            {
+                              "text": "✅ No broken links found in sample test\n"
+                            },
+                            {
+                              "text": "\n📊 PRODUCTION E2E TEST REPORT\n============================\nDate: 2025-11-11T03:07:39.755Z\nTarget: https://agenticlanding-ai.vercel.app\n\nSUMMARY:\n✅ Passed: 2\n⚠️  Warnings: 1\n❌ Failed: 0\n📈 Total: 3\nSuccess Rate: 66.7%\n\nDETAILED RESULTS:\n\n1. ✅ Responsive design works on Desktop\n   Details: {\n  \"successRate\": 100,\n  \"viewport\": {\n    \"name\": \"Desktop\",\n    \"width\": 1920,\n    \"height\": 1080\n  }\n}\n2. ⚠️ Dashboard loads but may have missing content\n3. ✅ No broken links found in sample test\n   Details: {\n  \"tested\": 0,\n  \"total\": 0\n}\n"
+                            },
+                            {
+                              "text": "\n📄 Reports saved to test-results-production/\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-11-11T03:07:37.360Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b76d1c8ae61aba48bfb-adac62995d6fe560f753",
                   "file": "production-e2e.spec.ts",
                   "line": 552,
                   "column": 9
@@ -851,11 +2581,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-11-10T16:07:08.682Z",
-    "duration": 64930.83,
-    "expected": 7,
+    "startTime": "2025-11-11T03:05:42.272Z",
+    "duration": 117511.598,
+    "expected": 54,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }
